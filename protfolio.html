@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Peddaboina Ravi — Python Developer & Data Analyst Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f9fbff, #eaf2ff);
+      color: #0f172a;
+    }
+
+    header {
+      background: #ffffff;
+      text-align: center;
+      padding: 50px 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      border-bottom: 4px solid #007bff;
+    }
+
+    .avatar {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 5px solid #007bff;
+      margin: 0 auto 20px;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1 {
+      color: #0056d6;
+      margin: 10px 0 5px;
+      font-size: 2em;
+    }
+
+    h2 {
+      color: #0056d6;
+      border-left: 5px solid #007bff;
+      padding-left: 10px;
+      margin-bottom: 15px;
+    }
+
+    main {
+      max-width: 950px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: flex-start;
+    }
+
+    .skill {
+      background: linear-gradient(90deg, #007bff, #0056d6);
+      color: #fff;
+      padding: 8px 15px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #ffffff;
+      border-top: 3px solid #007bff;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    label.upload-btn {
+      background: linear-gradient(90deg, #007bff, #0056d6);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 15px;
+      transition: background 0.3s ease;
+    }
+
+    label.upload-btn:hover {
+      background: linear-gradient(90deg, #0056d6, #003ea8);
+    }
+
+    input[type=file] {
+      display: none;
+    }
+
+    a {
+      color: #0056d6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="avatar">
+      <img id="profilePhoto" src="" alt="Profile Photo" />
+    </div>
+    <h1>Peddaboina Ravi</h1>
+    <p>Python Developer & Data Analyst | Hyderabad</p>
+    <label for="photoInput" class="upload-btn">Upload Photo</label>
+    <input id="photoInput" type="file" accept="image/*" onchange="loadPhoto(event)" />
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>Hello! I’m <strong>Peddaboina Ravi</strong>, a passionate <strong>Python Developer</strong> and <strong>Data Analyst</strong> currently pursuing my Master’s in Computer Science. I specialize in building intelligent data-driven solutions, web applications, and visual dashboards using Python, Flask, and Power BI. I’m dedicated to continuous learning and love transforming data into actionable insights to solve real-world problems.</p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li><strong>A.V. College of Arts, Science and Commerce — Hyderabad</strong><br>Master of Computer Science | Nov 2023 – Sep 2025 | CGPA: 7.0</li>
+        <li><strong>Bankatlal Badruka College of Information Technology — Hyderabad</strong><br>Bachelor of Computer Science | Aug 2020 – May 2023 | CGPA: 8.2</li>
+        <li><strong>Sri Chaitanya Junior Kalasala — Hyderabad</strong><br>MPC – Intermediate | Jun 2018 – Apr 2020</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <span class="skill">Python</span>
+        <span class="skill">SQL</span>
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">Flask</span>
+        <span class="skill">Django</span>
+        <span class="skill">Pandas</span>
+        <span class="skill">NumPy</span>
+        <span class="skill">Matplotlib</span>
+        <span class="skill">Power BI</span>
+        <span class="skill">Azure Data Factory</span>
+        <span class="skill">Git</span>
+        <span class="skill">VS Code</span>
+        <span class="skill">MySQL</span>
+        <span class="skill">PostgreSQL</span>
+        <span class="skill">Oracle</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Analysis and Prediction of Electric Vehicle Costs Using Machine Learning</strong><br>Tools: Python, Scikit-learn, Pandas, NumPy, Matplotlib, HTML, CSS, JavaScript.<br>Developed a model to predict EV costs using features such as battery capacity, range, charging time, and brand. Compared Random Forest, Linear Regression, and Neural Networks. Built a Flask web app for predictions.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li>IBM SkillsBuild Winter Certification – Data Analytics: Turning Data into Decisions Using Python – IBM</li>
+        <li>National Level Short-Term Training Program 2K24 – Brain O Vision</li>
+        <li>Deloitte Data Analytics Virtual Experience Program – The Forage | Completed Oct 2025</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> <a href="mailto:peddaboinaraviyadav0@gmail.com">peddaboinaraviyadav0@gmail.com</a><br>
+         <strong>Phone:</strong> +91-8688471526<br>
+         <strong>LinkedIn:</strong> <a href="#">(Add your LinkedIn profile manually)</a></p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Peddaboina Ravi | Python Developer & Data Analyst Portfolio
+  </footer>
+
+  <script>
+    function loadPhoto(event) {
+      const photo = document.getElementById('profilePhoto');
+      photo.src = URL.createObjectURL(event.target.files[0]);
+    }
+  </script>
+</body>
+</html>
